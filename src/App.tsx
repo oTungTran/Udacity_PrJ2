@@ -16,9 +16,8 @@ export default function App() {
   const [prevUrl, setPrevUrl] = useState<string>();
 
   useEffect(() => {
-    setPrevUrl(location.pathname);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    setPrevUrl(location.pathname === '/login' ? '/' : location.pathname);
+  }, [location.pathname]);
 
   return (
     <Routes>
