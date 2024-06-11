@@ -1,0 +1,39 @@
+.user-list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2em;
+    height: 64px;
+
+    .user-item {
+        list-style: none;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+            .avatar {
+                --size: 64px !important;
+
+                &::before {
+                    box-shadow: 0 0 8px var(--navy-blue);
+                }
+            }
+
+            .tooltip {
+                opacity: 1;
+            }
+        }
+
+        .tooltip {
+            position: absolute;
+            width: 500%;
+            height: fit-content;
+            bottom: -50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            opacity: 0;
+            transition: 300ms;
+        }
+    }
+}

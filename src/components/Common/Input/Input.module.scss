@@ -1,0 +1,35 @@
+.wrapper {
+    +.wrapper {
+        margin-top: 16px;
+    }
+}
+
+.label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.inputBlock {
+    margin-top: 8px;
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, .06);
+    border: 1px solid rgba(22, 24, 35, .06);
+}
+
+input {
+    background-color: transparent;
+    font-size: 1.4rem;
+    padding: 14px 16px;
+    width: 100%;
+
+    &.errors {
+        border: 1px solid #ff4c3a;
+    }
+}
+
+.message {
+    font-size: 1.3rem;
+    margin-top: 8px;
+    color: #ff4c3a;
+}

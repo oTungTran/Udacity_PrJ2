@@ -1,0 +1,18 @@
+.poll-detail-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .poll-author {
+        margin: 3rem 0 2rem 0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}

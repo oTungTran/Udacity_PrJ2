@@ -1,0 +1,23 @@
+.poll-headline {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.poll-shelf {
+    margin: 0 auto 3rem auto;
+    width: 80vw;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+
+    .poll-grid-wrapper {
+        padding: 2rem 4rem;
+
+        .poll-grid {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 3.5rem;
+        }
+    }
+}

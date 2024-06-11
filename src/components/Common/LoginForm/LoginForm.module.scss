@@ -1,0 +1,26 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+
+    .wrapper {
+        min-width: 40rem;
+
+        h1 {
+            text-align: center;
+            color: #000;
+        }
+
+        .control {
+            margin-bottom: 2rem;
+
+            button {
+                width: 100%;
+
+            }
+        }
+    }
+}
