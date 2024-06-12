@@ -4,6 +4,8 @@ This is the starter code for the final assessment project for Udacity's React & 
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm install`
+To install the necessary dependencies for this project, use the following command. This will install all the required packages listed in the package.json file.
 
 ### `npm start`
 
