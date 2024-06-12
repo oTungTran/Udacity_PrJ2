@@ -28,8 +28,8 @@ export default function App() {
         <Route path="leaderboard" element={<Suspense fallback={<div>Loading...</div>}><LeaderboardPage /></Suspense>} />
         <Route path="add" element={<Suspense fallback={<div>Loading...</div>}><NewPage /></Suspense>} />
         <Route path="questions/:questionId" element={<Suspense fallback={<div>Loading...</div>}><PollDetailPage /></Suspense>} />
+        <Route path="*" element={<NotFound />} />
       </Route>
-      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
