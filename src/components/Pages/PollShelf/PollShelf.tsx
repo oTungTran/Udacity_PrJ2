@@ -11,7 +11,7 @@ export type PollShellType = {
 export default function PollShell({ headline, polls, onView }: PollShellType) {
 
     const pollList = polls
-        .sort((a, b) => a.timestamp - b.timestamp)
+        .sort((a, b) => b.timestamp - a.timestamp)
         .map(poll => <Poll key={poll.id} {...poll} onView={onView} />);
 
     return (<>

@@ -29,7 +29,18 @@
                 &:hover {
                     border: 1px solid transparent;
                 }
+
             }
+
+
+            &.voted {
+                background-color: #2ed573;
+
+                span {
+                    color: black;
+                }
+            }
+
 
             &:hover {
                 border: 1px solid var(--primary-color);

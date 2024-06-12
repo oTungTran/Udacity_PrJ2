@@ -29,7 +29,7 @@ export default function QuestionDetail(
 
     const render = ({ votes, text, key }: { votes: string[], text: string, key: string }) => {
         return (
-            <div onClick={() => !isAnswer && onChoose(key)} className={[styles['option-item'], (isAnswer ? styles['selected'] : '')].join(" ")}>
+            <div onClick={() => !isAnswer && onChoose(key)} className={[styles['option-item'], (isAnswer ? styles['selected'] : ''), (votes.includes(userId) ? styles['voted'] : "")].join(" ")}>
                 <p className={styles['text']}>{text}</p>
                 {isAnswer ? answered(votes) : <span>Choose</span>}
             </div>
